@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>PHP AND SQL FULL DEMO</title>
+    
+</head>
+
+<body>
+    <h1> STUDENT PORTAL </h1>
+    <div class="d1">
+        <table border="1">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Regno</label></td>
+                    <td><input type="number" name="regno"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+
+                <tr>
+                    <td> NEW STUDENT REGISTRATION </td>
+                    <td><input type="submit" name="submit" value="Register New Student  "></td>
+                </tr>
+
+                <tr>
+                    <td> VIEW ALL STUDENTS </td>
+                    <td><input type="submit" name="view" value="View All Students"></td>
+                </tr>
+                <tr>
+                    <td> DELETE A STUDENT RECORD </td>
+                    <td><input type="number" name="delrno"></td>
+                    <td><input type="submit" name="delete" value="Enter Regno to DELETE"></td>
+                </tr>
+                <tr>
+                    <td> UPDATE A RECORD </td>
+                    <td><input type="text" name="changename" placeholder="Enter New Name">
+                    </td>
+                    <td><input type="number" name="changerno" placeholder="Regno of the Student"></td>
+                    <td> <input type="submit" name="update" value="Click to Update">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>
